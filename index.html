@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarztech</title>
+<meta name="description" content="Tarztech makes apps for the Syriac language: the Syriac Serto Keyboard and the Syriac Dictionary.">
+<link rel="icon" href="img/keyboard.png">
+<style>
+  :root {
+    --bg: #faf7f1; --card: #ffffff; --text: #1d1b18; --muted: #5f5a52;
+    --line: #e6e0d4; --accent: #24346e; --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15161a; --card: #1e2026; --text: #ece9e3; --muted: #a8a39a;
+      --line: #2e3038; --accent: #8fa2e8; --accent-text: #10121a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 40px; }
+  header h1 { font-size: 2.4rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  header p { margin: 0; color: var(--muted); font-size: 1.1rem; }
+  h2 { font-size: 1.1rem; margin: 48px 0 14px; text-transform: uppercase;
+       letter-spacing: 0.08em; color: var(--muted); }
+  .app { display: flex; gap: 18px; align-items: flex-start; background: var(--card);
+         border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin-bottom: 14px; }
+  .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .app h3 { margin: 0 0 4px; font-size: 1.15rem; }
+  .app p { margin: 0 0 10px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a, .links span { font-size: 0.92rem; padding: 6px 12px; border-radius: 999px;
+         text-decoration: none; border: 1px solid var(--line); color: var(--text); }
+  .links a.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .links span { color: var(--muted); }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin-bottom: 6px; }
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 0.9rem; }
+  @media (max-width: 480px) {
+    main { padding-top: 36px; }
+    header h1 { font-size: 2rem; }
+    .app { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Tarztech</h1>
+    <p>Apps for the Syriac language.</p>
+  </header>
+
+  <h2>Apps</h2>
+
+  <section class="app">
+    <img src="img/keyboard.png" alt="Syriac Serto Keyboard icon">
+    <div>
+      <h3>Syriac Serto Keyboard</h3>
+      <p>A West Syriac (Serto) keyboard for iPhone, iPad and Android, with vowel marks, in the Serto Urhoy typeface.</p>
+      <div class="links">
+        <a class="primary" href="https://apps.apple.com/us/app/syriacserto/id6786892397">App Store</a>
+        <a class="primary" href="https://play.google.com/store/apps/details?id=com.tarzi.serto">Google Play</a>
+        <a href="https://gtarzi-droid.github.io/syriac-serto-privacy/">Privacy policy</a>
+        <a href="https://gtarzi-droid.github.io/syriac-serto-privacy/support.html">Support</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="app">
+    <img src="img/dictionary.png" alt="Syriac Dictionary icon">
+    <div>
+      <h3>Syriac Dictionary</h3>
+      <p>An offline Syriac, English and Arabic dictionary with audio pronunciation.</p>
+      <div class="links">
+        <a class="primary" href="https://apps.apple.com/us/app/syriac-dictionary/id6787978806">App Store</a>
+        <span>Google Play: coming soon</span>
+        <a href="https://gtarzi-droid.github.io/syriac-dictionary-privacy/">Privacy policy</a>
+        <a href="https://gtarzi-droid.github.io/syriac-dictionary-privacy/support.html">Support</a>
+      </div>
+    </div>
+  </section>
+
+  <h2>Also</h2>
+  <ul>
+    <li><a href="https://learn.tarz.cloud">Learn Syriac</a>: a course for English speakers in reading and writing Syriac Aramaic.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:tarztech@gmail.com">tarztech@gmail.com</a> for support, questions or corrections.</p>
+
+  <footer>© 2026 Tarztech</footer>
+</main>
+</body>
+</html>
